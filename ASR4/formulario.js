@@ -1,5 +1,8 @@
 $(document).ready(function(){
     $('#Enviar').click(function(){
+        var nome = $("input[name='nome']").val();
+        var login = $("input[name='login']").val();
+        var senha = $("input[name='senha']").val();
         if($("#nome").val() == "" || $("#Login").val() == "" || $("#senha").val() == ""){
             alert("Preencha os campos Nome, Login e Senha");
             return;
