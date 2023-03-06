@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>formulário</title>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="formulario.css">
+<meta charset="utf-8">
+<script src="formulario.js"></script>
+</head>
+<body>
+    <div id="ponta">
+        <div id="cleber">Nome Completo: <input type="text" id="nome"></input></div>
+
+        <div id="cleber">Login:<input type="text" id="Login"></input></div>
+
+        <div id="cleber">Senha:<input type="password" id="senha"></input></div>
+    </div>
+    <div id="money">
+        <p>Em que moeda prefere receber o salario:</p>
+        <input type="radio" id="Real" value="Real"name="salario">
+        <label for="Real">Real</label>
+        <br><input type="radio" id="Dolar" value="Dolar"name="salario">
+        <label for="Dolar">Dolar</label>
+        <br><input type="radio" id="Euro" value="Euro" name="salario">
+        <label for="Euro">Euro</label>
+        <br><input type="radio" id="Yen" value="Yen" name="salario">
+        <label for="Yen">Yen</label>
+    </div>
+    <div id="linguagem">
+        <p>Linguagem que você já estudou:</p>
+        <input type="checkbox" id="C" value="C" name="linguagem">
+        <label for="C">C</label>
+        <br><input type="checkbox" id="C++" value="C++" name="linguagem">
+        <label for="C++">C++</label>
+        <br><input type="checkbox" id="HTML" value="HTML" name="linguagem">
+        <label for="HTML">HTML</label>
+        <br><input type="checkbox" id="Java" value="Java" name="linguagem">
+        <label for="Java">Java</label>
+        <br><input type="checkbox" id="Javascript" value="Javascript" name="linguagem">
+        <label for="Javascript">Javascript</label>
+        <br><input type="checkbox" id="Python" value="Python" name="linguagem">
+        <label for="Python">Python</label>
+    </div>
+    <div>
+        <div id="fotografia"><label for ="Foto">Foto Atual:</label></div>
+        <input type="file" id="Foto" name="Foto">
+    </div>
+    <div id="assuntos">
+        <p>Seus assuntos favoritos:</p>
+        <select name="assuntos" size="4" multiple>
+            <option>Artes</option>
+            <option>Esportes</option>
+            <option>Games</option>
+            <option>Músicas</option>
+        </select>
+    </div>
+    <div id="comentario">
+        <p>Gostaria de fazer comentários?</p>
+        <textarea id="comentario" name="comentario"rows="6" cols="40" placeholder="Faça seus comentários aqui"></textarea>
+    </div>
+    <div id="botao">
+        <input type="submit" id="Enviar" value="Enviar">
+        <input type="button" id="Limpar" value="Limpar">
+    </div>
+
+</body>
+</html>
